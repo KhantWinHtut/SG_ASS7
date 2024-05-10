@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    button{
+        padding: 20px;
+        border:1px solid saddlebrown;
+        background-color: rgb(235, 24, 42);
+        font-size: 15px;
+        color:rgb(247, 235, 235);
+        border-radius: 10px;
+        transition:1s ease;
+        animation-name:move;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        /* width:100px;
+        height:40px;
+         */
+    }
+    /* button:hover{
+        transform: rotate(360deg);
+        transform: translateX(500px);
+    
+
+
+    } */
+    div{
+        margin:1vh;
+        
+        text-align: left;
+    }
+
+    @keyframes move{
+        0%{
+            transform:translateX(0px) rotate(0deg);
+
+        }
+        50%{
+            transform:translateX(800px) rotate(360deg);
+
+        }
+        100%{
+            transform:translateX(0px) rotate(0deg);
+
+        }
+    }
+    </style>
+<body>
+    <div>
+        <h2>This is the Animation testing.</h2><br><br><br>
+        <button>CSS Animation.</button>
+    </div>
+    
+</body>
+</html>
